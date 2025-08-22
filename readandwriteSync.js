@@ -1,3 +1,7 @@
+
+// locking way in sync
+
+
 const fs =require('fs');
 
 // const name= "John Deo";
