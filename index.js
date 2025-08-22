@@ -5,8 +5,15 @@ const fs =require('fs');
 // const age=25;
 // console.log(name,des, ", his age is:", age);
 
-const neee = fs.readFileSync('./txt/dot.txt' ,'utf-8');
-console.log(neee);
+const textIn = fs.readFileSync('./txt/dot.txt' ,'utf-8');
+console.log(textIn);
+
+const textout= `This is here : ${textIn}.\nCreated on ${Date.now()}`; 
+fs.writeFileSync('./txt/textout.txt',textout);
+console.log('file written sucessfully');
+
+
+
 
 
 
